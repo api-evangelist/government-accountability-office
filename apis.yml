@@ -1,15 +1,32 @@
-name: government-accountability-office
-description: Needs a description.
-image: https://kinlane-productions2.s3.amazonaws.com/apis-json-icons/apis-json.png
-url: https://example.com/apis/apis.yml
-type: Contract
+aid: government-accountability-office
+name: Government Accountability Office
+description: >-
+  The Government Accountability Office (GAO) is the United States government's
+  supreme audit institution. It provides Congress with auditing, evaluation, and
+  investigative services, and publishes reports, testimonies, and other products
+  examining federal programs and policies.
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://www.gao.gov
 created: '2024-12-25'
-modified: '2024-12-25'
-specificationVersion: '0.18'
+modified: '2026-03-16'
+specificationVersion: '0.19'
+type: Index
 tags:
-  - Tag
+  - Government
+  - Accountability
+  - Federal Government
+  - Auditing
+  - United States
 apis: []
-common: []
+common:
+  - type: Portal
+    url: https://www.gao.gov
+  - type: Terms of Service
+    url: https://www.gao.gov/about/legal
+  - type: Privacy Policy
+    url: https://www.gao.gov/about/privacy
+  - type: Support
+    url: https://www.gao.gov/about/contact-us
 maintainers:
-  - FN: API Evangelist
-    email: info@apievangelist.com
+  - FN: Kin Lane
+    email: kin@apievangelist.com
