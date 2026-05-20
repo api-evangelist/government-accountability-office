@@ -19,6 +19,8 @@ tags:
   - United States
 apis: []
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/us-government
   - type: Portal
     url: https://www.gao.gov
   - type: Reports
