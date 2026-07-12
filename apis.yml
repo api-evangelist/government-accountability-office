@@ -19,6 +19,8 @@ tags:
   - United States
 apis: []
 common:
+  - type: DomainSecurity
+    url: security/government-accountability-office-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/us-government
   - type: Portal
@@ -33,6 +35,8 @@ common:
     url: https://www.gao.gov/about/privacy
   - type: Support
     url: https://www.gao.gov/about/contact-us
+  - url: https://www.gao.gov/rss/reports.xml
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
