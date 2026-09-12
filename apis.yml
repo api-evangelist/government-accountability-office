@@ -47,6 +47,8 @@ tags_raw:
   - United States
 apis: []
 common:
+  - type: Website
+    url: https://www.gao.gov/
   - type: DomainSecurity
     url: security/government-accountability-office-domain-security.yml
   - type: LinkedIn
