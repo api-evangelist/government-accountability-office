@@ -1,0 +1,76 @@
+# U.S. Government Accountability Office (GAO)
+
+> The Government Accountability Office is the United States government's supreme audit
+> institution — the "congressional watchdog." It audits, evaluates and investigates federal
+> programs for Congress and publishes the results as reports, testimonies, legal decisions and
+> bid-protest rulings. **GAO publishes no public REST API, no OpenAPI/GraphQL/AsyncAPI contract,
+> no SDKs and no developer portal.** Its machine-readable public surface is a catalog of RSS 2.0
+> feeds plus a set of human-facing search databases. This file is an API Evangelist-generated map
+> of that surface; it is not published by GAO.
+
+## What is machine-readable
+
+All feeds below are RSS 2.0 over HTTPS, unauthenticated, and were verified returning HTTP 200 on
+2026-09-12. They are the only machine-readable endpoints GAO publishes.
+
+- [GAO Reports](https://www.gao.gov/rss/reports.xml): Summaries of new GAO reports and testimonies.
+- [GAO Reports-Brief](https://www.gao.gov/rss/reports_450.xml): Shorter summaries of the same products (redirects to /rss/reports-450.xml).
+- [GAO Legal Products](https://www.gao.gov/rss/reportslegal.xml): Comptroller General decisions and opinions, including bid protests.
+- [GAO Legal Products - Major Rules](https://www.gao.gov/rss/reports_majrule.xml): Congressional Review Act reports on major federal agency rules.
+- [GAO Press Releases](https://www.gao.gov/rss/press.xml): Press releases from the Office of Public Affairs.
+- [GAO WatchBlog](https://www.gao.gov/blog/feed): GAO's blog feed.
+- [Watchdog Report Podcast](https://www.gao.gov/podcast/watchdog.xml): Podcast RSS feed.
+- [Technology Assessment Products](https://www.gao.gov/rss/docsearch/featured/technology_assessment_products): Featured-search feed of GAO technology assessments and Science & Tech Spotlights.
+
+### Topic feeds
+
+One RSS feed per GAO subject area, at `https://www.gao.gov/rss/topic/<Topic_Name>`:
+
+- Agriculture_and_Food, Auditing_and_Financial_Management, Budget_and_Spending,
+  Business_Regulation_and_Consumer_Protection, Economic_Development, Education, Employment,
+  Energy, Equal_Opportunity, Financial_Markets_and_Institutions, GAO_Mission_and_Operations,
+  Government_Operations, Health_Care, Homeland_Security, Housing, Human_Capital,
+  Information_Management, Information_Security, Information_Technology, International_Affairs,
+  Justice_and_Law_Enforcement, National_Defense, Natural_Resources_and_Environment,
+  Retirement_Security, Science_and_Technology, Space, Tax_Policy_and_Administration,
+  Telecommunications, Transportation, Veterans, Worker_and_Family_Assistance
+
+Example: [Space](https://www.gao.gov/rss/topic/Space).
+
+## Search databases (human interfaces, no API)
+
+These are searchable web applications. They have no documented JSON endpoint, no export API, and
+`robots.txt` disallows crawling their query strings — query them in a browser, not with an agent.
+
+- [Reports & Testimonies](https://www.gao.gov/reports-testimonies): The full product catalog.
+- [Recommendations Database](https://www.gao.gov/reports-testimonies/recommendations-database): Open and closed GAO recommendations to federal agencies.
+- [Bid Protest Search & Docket](https://www.gao.gov/legal/bid-protests/search): Bid protest decisions and the docket, updated once a day.
+- [Appropriations Law Decisions](https://www.gao.gov/legal/appropriations-law/search): Comptroller General appropriations law decisions.
+- [Congressional Review Act Rules Database](https://www.gao.gov/legal/congressional-review-act/search-database-of-rules)
+- [Federal Vacancies Search](https://www.gao.gov/legal/federal-vacancies-reform-act/federal-vacancies-search)
+
+## Policy and access
+
+- [Copyright & Terms of Use](https://www.gao.gov/copyright): GAO products are U.S. government works, generally in the public domain.
+- [Privacy Policy](https://www.gao.gov/privacy-policy)
+- [robots.txt](https://www.gao.gov/robots.txt): `Crawl-delay: 420` for all user agents; `bytespider` and `perplexitybot` are disallowed site-wide; search, `/reports-testimonies`, `/agencies`, and every database query string are disallowed.
+- [Contact Us](https://www.gao.gov/about/contact-us)
+- [Stay Connected](https://www.gao.gov/about/stay-connected): GAO's own index of the feeds above.
+
+## Notes for agents
+
+- The edge (Akamai Bot Manager) serves a JavaScript interstitial and HTTP 403 to plain crawlers on
+  HTML paths. Feed paths (`/rss/*`, `/blog/feed`, `/podcast/*.xml`) and `/robots.txt` are served
+  directly. Respect the 420-second crawl delay and the robots.txt disallow list.
+- No `/.well-known/` document of any kind is served: security.txt, api-catalog, openid-configuration,
+  oauth-authorization-server, agent-card.json and apis.json all return 404 (see
+  `well-known/government-accountability-office-well-known.yml` for the full probe record).
+- Full text of GAO reports is also redistributed by GPO's govinfo, which does publish an API — that
+  is a different organization's contract, not GAO's.
+
+## About this file
+
+- Generated by [API Evangelist](https://apievangelist.com) on 2026-09-12 from this repository's
+  `apis.yml` plus live probes of GAO's public hosts. Method: generated. Not authored or endorsed
+  by GAO.
+- [API Evangelist profile](https://github.com/api-evangelist/government-accountability-office)

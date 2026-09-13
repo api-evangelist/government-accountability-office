@@ -30,7 +30,7 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/government-accountability-office.png
 url: https://raw.githubusercontent.com/api-evangelist/government-accountability-office/refs/heads/main/apis.yml
 created: '2024-12-25'
-modified: '2026-04-28'
+modified: '2026-09-12'
 specificationVersion: '0.23'
 type: Index
 tags:
@@ -53,20 +53,48 @@ common:
     url: security/government-accountability-office-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/us-government
-  - type: Portal
-    url: https://www.gao.gov
   - type: Reports
     url: https://www.gao.gov/reports-testimonies
-  - type: OpenData
-    url: https://www.gao.gov/about/what-gao-does/data-tools
   - type: TermsOfService
-    url: https://www.gao.gov/about/legal
+    url: https://www.gao.gov/copyright
   - type: PrivacyPolicy
-    url: https://www.gao.gov/about/privacy
+    url: https://www.gao.gov/privacy-policy
   - type: Support
     url: https://www.gao.gov/about/contact-us
-  - url: https://www.gao.gov/rss/reports.xml
-    type: Blog
+  - type: Blog
+    url: https://www.gao.gov/blog
+  - type: BlogFeeds
+    url: https://www.gao.gov/rss/reports.xml
+  - type: Press
+    url: https://www.gao.gov/press-center
+  - type: Podcast
+    url: https://www.gao.gov/podcast
+  - type: LLMsTxt
+    url: llms/government-accountability-office-llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+
+x-enrichment:
+  date: '2026-09-12'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    GAO publishes no API and no developer program of any kind — its entire machine-readable
+    public surface is a catalog of ~40 RSS 2.0 feeds, while the Recommendations Database,
+    bid-protest docket and appropriations-law decisions are browser-only search applications
+    whose query strings robots.txt disallows.
+  evidence:
+    - url: https://www.gao.gov/openapi.json
+      status: 404
+    - url: https://www.gao.gov/.well-known/api-catalog
+      status: 404
+    - url: https://www.gao.gov/about/what-gao-does/data-tools
+      status: 404
+    - url: https://www.gao.gov/rss/reports.xml
+      status: 200
+  checked: '2026-09-12'

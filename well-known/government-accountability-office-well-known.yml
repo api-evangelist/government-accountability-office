@@ -1,0 +1,89 @@
+generated: '2026-09-12'
+method: probed
+source: live HTTPS probes of the GAO web hosts, 2026-09-12
+note: >-
+  Every named path in the enrichment contract's closed list was probed on both GAO web
+  hosts. Nothing was served. The apex gao.gov 302-redirects every path to www.gao.gov,
+  and www.gao.gov returns a Drupal 404 for all of them. No WellKnown or SecurityTxt
+  pointer is emitted from this file: it records an absence, not a surface. GAO's edge
+  (Akamai Bot Manager) answers a plain crawler with HTTP 403 on most paths, so every
+  probe below was issued with a full browser header set (Sec-Fetch-*, Upgrade-Insecure-
+  Requests) which the edge admits; the 404s are real origin responses, not the block page.
+hit_count: 0
+path_echo_control: passed
+hosts:
+  - host: https://www.gao.gov
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/api-catalog.json
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/ucp.json
+        status: 404
+      - path: /.well-known/acp.json
+        status: 404
+      - path: /.well-known/aauth-resource.json
+        status: 404
+      - path: /.well-known/apis.json
+        status: 404
+      - path: /apis.json
+        status: 404
+      - path: /apis.yml
+        status: 403
+        note: Akamai edge denial, not an origin response; no document served.
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+      - path: /.well-known/gao-negative-control-7f3ab91c.json
+        status: 404
+        note: >-
+          Negative control. A path that cannot exist returned 404, so this host does not
+          echo well-known paths back as documents.
+  - host: https://gao.gov
+    note: >-
+      Apex host. Every probed path answered 302 to the same path on www.gao.gov; no
+      document is served from the apex.
+    documents:
+      - path: /.well-known/security.txt
+        status: 302
+      - path: /.well-known/openid-configuration
+        status: 302
+      - path: /.well-known/oauth-authorization-server
+        status: 302
+      - path: /.well-known/oauth-protected-resource
+        status: 302
+      - path: /.well-known/api-catalog
+        status: 302
+      - path: /.well-known/api-catalog.json
+        status: 302
+      - path: /.well-known/ai-plugin.json
+        status: 302
+      - path: /.well-known/ucp.json
+        status: 302
+      - path: /.well-known/acp.json
+        status: 302
+      - path: /.well-known/aauth-resource.json
+        status: 302
+      - path: /.well-known/apis.json
+        status: 302
+      - path: /apis.json
+        status: 302
+      - path: /apis.yml
+        status: 302
+      - path: /.well-known/agent-card.json
+        status: 302
+      - path: /.well-known/agent.json
+        status: 302
+      - path: /.well-known/gao-negative-control-7f3ab91c.json
+        status: 302
