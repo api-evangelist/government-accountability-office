@@ -36,7 +36,7 @@ type: Index
 tags:
   - Accountability
   - Auditing
-  - Federal-Government
+  - Federal Government
   - Government
   - United States
 tags_raw:
@@ -45,6 +45,7 @@ tags_raw:
   - Federal Government
   - Government
   - United States
+  - Federal-Government
 apis: []
 common:
   - type: Website
