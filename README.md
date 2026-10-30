@@ -1,4 +1,4 @@
-# Government Accountability Office (GAO)
+# Government Accountability Office
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,45 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-The U.S. Government Accountability Office (GAO) is the United States government's supreme audit institution. It provides Congress with auditing, evaluation, and investigative services, and publishes reports, testimonies, and other products examining federal programs and policies.
+The Government Accountability Office (GAO) is the United States government's supreme audit institution. It provides Congress with auditing, evaluation, and investigative services, and publishes reports, testimonies, and other products examining federal programs and policies.
 
-**Type:** Index
-**Website:** https://www.gao.gov
+**Areas:** Accountability · Auditing · Federal Government · Government · United States
 
-## Tags
+## Government Accountability Office on APIs.io
 
-- Accountability
-- Auditing
-- Federal Government
-- Government
-- United States
+Everything profiled for Government Accountability Office is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/government-accountability-office/](https://apis.io/providers/government-accountability-office/)** — or go straight to one of the APIs or properties below.
 
-## About
+### Published properties
 
-GAO supports the Congress in meeting its constitutional responsibilities and helps improve the performance and ensure the accountability of the federal government for the benefit of the American people. Its work includes audits of federal agencies, evaluations of programs, investigations into allegations of illegal and improper activities, and legal opinions.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-GAO does not currently expose a public REST API. This index records the organization, its public-facing portals, and supporting metadata for the API Evangelist Network catalog. As GAO publishes machine-readable endpoints, they will be added to `apis.yml` and corresponding artifacts generated.
+#### Security (1)
 
-## Catalog
+Authentication, trust centre, and vulnerability disclosure.
 
-| Item | Path |
-|------|------|
-| APIs.yml | [apis.yml](apis.yml) |
+- [Government Accountability Office Domain Security](https://apis.io/security/government-accountability-office/government-accountability-office-domain-security/)
 
-## Common Properties
+## Where to find this API
 
-- [Portal](https://www.gao.gov)
-- [Reports & Testimonies](https://www.gao.gov/reports-testimonies)
-- [Data Tools](https://www.gao.gov/about/what-gao-does/data-tools)
-- [Terms of Service](https://www.gao.gov/about/legal)
-- [Privacy Policy](https://www.gao.gov/about/privacy)
-- [Support / Contact](https://www.gao.gov/about/contact-us)
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-## Timestamps
+- [Website](https://www.gao.gov/)
+- [Support](https://www.gao.gov/about/contact-us)
+- [Blog](https://www.gao.gov/blog)
+- [Terms of service](https://www.gao.gov/copyright)
+- [Privacy policy](https://www.gao.gov/privacy-policy)
 
-- **Created:** 2024-12-25
-- **Modified:** 2026-04-28
+## API Evangelist rating
 
-## Maintainers
+**Kin Score 11.3** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-- **Kin Lane** - kin@apievangelist.com
+| Facet | Score |
+|---|---|
+| Discoverability | 56.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Government & Public Sector
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/government-accountability-office/](https://apis.io/providers/government-accountability-office/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Government Accountability Office: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/government-accountability-office/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
